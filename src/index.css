@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg:         #0F172E;
+  --surface:    #1A2442;
+  --surface-hi: #243357;
+  --cyan:       #33D9F2;
+  --cyan-dim:   rgba(51,217,242,0.15);
+  --coral:      #FA7359;
+  --coral-dim:  rgba(250,115,89,0.15);
+  --amber:      #FFBF33;
+  --amber-dim:  rgba(255,191,51,0.15);
+  --purple:     #B366F2;
+  --purple-dim: rgba(179,102,242,0.15);
+  --green:      #4DE680;
+  --green-dim:  rgba(77,230,128,0.15);
+  --muted:      #728CB3;
+  --text:       #F2F7FF;
+  --text-sub:   #8CA5CC;
+  --red:        #F25959;
+  --red-dim:    rgba(242,89,89,0.15);
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+}
+
+* { box-sizing: border-box; }
+
+button { font-family: inherit; }
+
+/* Hide scrollbar but keep scroll */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { scrollbar-width: none; }
