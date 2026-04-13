@@ -7,6 +7,10 @@ import ByGoal from './pages/discover/ByGoal'
 import ByWorkoutType from './pages/discover/ByWorkoutType'
 import ByEquipment from './pages/discover/ByEquipment'
 
+import StretchHome from './pages/stretch/StretchHome'
+import StretchDetail from './pages/stretch/StretchDetail'
+import StretchSession from './pages/stretch/StretchSession'
+
 import TodayGym from './pages/today/TodayGym'
 import TodayHome from './pages/today/TodayHome'
 import ExerciseLog from './pages/today/ExerciseLog'
@@ -20,6 +24,11 @@ import BJJPositionalMap from './pages/martial-arts/BJJPositionalMap'
 import TechniqueDetail from './pages/martial-arts/TechniqueDetail'
 import CombinationCard from './pages/martial-arts/CombinationCard'
 import ScenarioDetail from './pages/martial-arts/ScenarioDetail'
+
+import ExerciseLibrary from './pages/library/ExerciseLibrary'
+import ExerciseDetail from './pages/library/ExerciseDetail'
+import RoutineTemplates from './pages/library/RoutineTemplates'
+import RoutineEditor from './pages/library/RoutineEditor'
 
 import WorkoutComplete from './pages/utility/WorkoutComplete'
 import PlateCalculator from './pages/utility/PlateCalculator'
@@ -36,6 +45,10 @@ export default function App() {
         <Route path="/discover/type" element={<ByWorkoutType />} />
         <Route path="/discover/equipment" element={<ByEquipment />} />
 
+        <Route path="/discover/stretch" element={<StretchHome />} />
+        <Route path="/discover/stretch/session" element={<StretchSession />} />
+        <Route path="/discover/stretch/:id" element={<StretchDetail />} />
+
         <Route path="/discover/martial-arts" element={<MartialArtsHome />} />
         <Route path="/discover/martial-arts/muay-thai" element={<MuayThaiOverview />} />
         <Route path="/discover/martial-arts/krav-maga" element={<KravMagaOverview />} />
@@ -44,6 +57,11 @@ export default function App() {
         <Route path="/discover/martial-arts/:art/technique/:id" element={<TechniqueDetail />} />
         <Route path="/discover/martial-arts/muay-thai/combo/:id" element={<CombinationCard />} />
         <Route path="/discover/martial-arts/krav-maga/scenario/:id" element={<ScenarioDetail />} />
+
+        <Route path="/library" element={<ExerciseLibrary />} />
+        <Route path="/library/:id" element={<ExerciseDetail />} />
+        <Route path="/routines" element={<RoutineTemplates />} />
+        <Route path="/routines/:id/edit" element={<RoutineEditor />} />
 
         <Route path="/today" element={<TodayGym />} />
         <Route path="/today/home" element={<TodayHome />} />
