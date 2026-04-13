@@ -1,4 +1,4 @@
-import { Routes, Route, Navigate } from 'react-router-dom'
+import { Routes, Route, Navigate, useLocation } from 'react-router-dom'
 import NavBar from './components/layout/NavBar'
 
 import DiscoverHome from './pages/discover/DiscoverHome'
@@ -30,10 +30,23 @@ import ExerciseDetail from './pages/library/ExerciseDetail'
 import RoutineTemplates from './pages/library/RoutineTemplates'
 import RoutineEditor from './pages/library/RoutineEditor'
 
+import Progress from './pages/progress/Progress'
+import History from './pages/progress/History'
+import Settings from './pages/settings/Settings'
+
+import Welcome from './pages/onboarding/Welcome'
+import Goals from './pages/onboarding/Goals'
+import Schedule from './pages/onboarding/Schedule'
+import HomeEquipment from './pages/onboarding/HomeEquipment'
+import GymSetup from './pages/onboarding/GymSetup'
+
 import WorkoutComplete from './pages/utility/WorkoutComplete'
 import PlateCalculator from './pages/utility/PlateCalculator'
 
-export default function App() {
+function AppShell() {
+  const { pathname } = useLocation()
+  const isOnboarding = pathname.startsWith('/onboarding')
+
   return (
     <div className="min-h-screen" style={{ background: 'var(--bg)', color: 'var(--text)' }}>
       <Routes>
@@ -69,8 +82,23 @@ export default function App() {
         <Route path="/today/qr" element={<QRScan />} />
         <Route path="/today/complete" element={<WorkoutComplete />} />
         <Route path="/today/plate-calc" element={<PlateCalculator />} />
+
+        <Route path="/progress" element={<Progress />} />
+        <Route path="/progress/history" element={<History />} />
+
+        <Route path="/settings" element={<Settings />} />
+
+        <Route path="/onboarding" element={<Welcome />} />
+        <Route path="/onboarding/goals" element={<Goals />} />
+        <Route path="/onboarding/schedule" element={<Schedule />} />
+        <Route path="/onboarding/equipment" element={<HomeEquipment />} />
+        <Route path="/onboarding/gym" element={<GymSetup />} />
       </Routes>
-      <NavBar />
+      {!isOnboarding && <NavBar />}
     </div>
   )
+}
+
+export default function App() {
+  return <AppShell />
 }
