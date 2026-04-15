@@ -1,4 +1,4 @@
--- GymTracker — Session 2 initial schema
+-- Meridian — Session 2 initial schema
 -- Paste this entire file into Supabase SQL editor and run.
 -- Blocks run in order; each is self-contained and idempotent-safe for a fresh project.
 

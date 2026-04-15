@@ -39,9 +39,9 @@ export default function Welcome() {
           className="w-[60px] h-[60px] rounded-[14px] flex items-center justify-center"
           style={{ background: 'var(--cyan)' }}
         >
-          <span className="text-[28px] font-bold" style={{ color: 'var(--bg)' }}>G</span>
+          <span className="text-[28px] font-bold" style={{ color: 'var(--bg)' }}>M</span>
         </div>
-        <h1 className="mt-5 text-[30px] font-bold" style={{ color: 'var(--text)' }}>GymTracker</h1>
+        <h1 className="mt-5 text-[30px] font-bold" style={{ color: 'var(--text)' }}>Meridian</h1>
         <p className="mt-2 text-[15px]" style={{ color: 'var(--text-sub)' }}>
           Train with Intent.
         </p>
