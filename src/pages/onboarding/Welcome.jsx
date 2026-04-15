@@ -43,7 +43,7 @@ export default function Welcome() {
         </div>
         <h1 className="mt-5 text-[30px] font-bold" style={{ color: 'var(--text)' }}>GymTracker</h1>
         <p className="mt-2 text-[15px]" style={{ color: 'var(--text-sub)' }}>
-          Your workouts. Your progress.<br />No fluff.
+          Train with Intent.
         </p>
       </div>
 
