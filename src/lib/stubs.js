@@ -362,6 +362,15 @@ export const getStretchSession = async (category) => {
 // Martial arts
 // ───────────────────────────────────────────────────────────
 
+export const getTechniqueById = async (id) => {
+  const { data } = await supabase
+    .from('martial_arts_techniques')
+    .select('*')
+    .eq('id', id)
+    .maybeSingle()
+  return data
+}
+
 export const getMartialArtsTechniques = async (art, category) => {
   let query = supabase.from('martial_arts_techniques').select('*').eq('art', art)
   if (category && category !== 'all') {
