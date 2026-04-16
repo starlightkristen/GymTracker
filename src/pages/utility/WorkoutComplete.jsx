@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { Check, TrendingUp } from 'lucide-react'
 import ScreenWrapper from '../../components/layout/ScreenWrapper'
 import { saveWorkoutSession } from '../../lib/stubs'
 
@@ -28,13 +29,21 @@ export default function WorkoutComplete() {
 
   return (
     <ScreenWrapper>
-      <div className="pt-20 pb-8 text-center">
-        <p className="text-[60px] leading-none">🏆</p>
-        <h1 className="mt-5 text-[34px] font-bold leading-tight" style={{ color: 'var(--text)' }}>
-          Workout<br />Complete!
+      <div className="pt-20 pb-8 text-center flex flex-col items-center">
+        <div
+          className="w-14 h-14 rounded-full flex items-center justify-center"
+          style={{ background: 'var(--cyan-dim)' }}
+        >
+          <Check size={28} strokeWidth={2.5} style={{ color: 'var(--cyan)' }} />
+        </div>
+        <p className="mt-5 text-[11px] label-micro" style={{ color: 'var(--cyan)' }}>
+          Session complete
+        </p>
+        <h1 className="mt-1 text-[24px] font-semibold tracking-tight" style={{ color: 'var(--text)' }}>
+          Nice work.
         </h1>
-        <p className="mt-3 text-[13px]" style={{ color: 'var(--text-sub)' }}>
-          Push Day&nbsp;&nbsp;·&nbsp;&nbsp;6 exercises&nbsp;&nbsp;·&nbsp;&nbsp;42 min
+        <p className="mt-2 text-[12px]" style={{ color: 'var(--text-sub)' }}>
+          Push Day&nbsp;·&nbsp;6 exercises&nbsp;·&nbsp;42 min
         </p>
       </div>
 
@@ -45,10 +54,10 @@ export default function WorkoutComplete() {
             className="rounded-card text-center py-3"
             style={{ background: 'var(--surface)', minHeight: 72 }}
           >
-            <p className="text-[22px] font-bold leading-none" style={{ color: 'var(--cyan)' }}>
+            <p className="text-[20px] font-semibold leading-none font-mono" style={{ color: 'var(--cyan)' }}>
               {s.value}
             </p>
-            <p className="mt-2 text-[11px]" style={{ color: 'var(--text-sub)' }}>
+            <p className="mt-2 text-[10px] label-micro" style={{ color: 'var(--text-sub)' }}>
               {s.label}
             </p>
           </div>
@@ -57,10 +66,11 @@ export default function WorkoutComplete() {
 
       <div className="px-5 mt-4">
         <div
-          className="rounded-card h-12 flex items-center justify-center text-[13px] gap-2"
+          className="rounded-card h-12 flex items-center justify-center text-[12px] font-medium gap-2.5"
           style={{ background: 'var(--amber-dim)', color: 'var(--amber)' }}
         >
-          🏆&nbsp;&nbsp;2 new PRs this session — tap to see
+          <TrendingUp size={14} strokeWidth={2.25} />
+          <span>2 new PRs this session — tap to see</span>
         </div>
       </div>
 

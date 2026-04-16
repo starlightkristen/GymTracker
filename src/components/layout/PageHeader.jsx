@@ -20,12 +20,12 @@ export default function PageHeader({ back = false, backLabel, title, subtitle, r
       <div className="flex items-start justify-between gap-3">
         <div className="min-w-0 flex-1">
           {title && (
-            <h1 className="text-[26px] font-bold leading-tight truncate" style={{ color: 'var(--text)' }}>
+            <h1 className="text-[22px] font-semibold leading-[1.15] tracking-tight truncate" style={{ color: 'var(--text)' }}>
               {title}
             </h1>
           )}
           {subtitle && (
-            <p className="text-[13px] mt-1" style={{ color: 'var(--text-sub)' }}>
+            <p className="text-[12px] mt-1.5" style={{ color: 'var(--text-sub)' }}>
               {subtitle}
             </p>
           )}

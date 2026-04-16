@@ -39,12 +39,12 @@ export default function NumericKeypad({
       )}
       <div className="flex flex-col items-center pt-6 pb-4">
         <p
-          className="text-[72px] font-bold leading-none"
+          className="text-[64px] font-semibold leading-none font-mono tracking-tight"
           style={{ color: 'var(--cyan)' }}
         >
           {display}
         </p>
-        <p className="mt-3 text-[16px]" style={{ color: 'var(--text-sub)' }}>
+        <p className="mt-3 text-[11px] label-micro" style={{ color: 'var(--text-sub)' }}>
           {unit}
         </p>
       </div>
@@ -83,7 +83,7 @@ export default function NumericKeypad({
               type="button"
               onClick={() => press(k)}
               aria-label={isDel ? 'Delete' : k}
-              className="h-[62px] rounded-card flex items-center justify-center text-[22px]"
+              className="h-[62px] rounded-card flex items-center justify-center text-[22px] font-mono font-medium"
               style={{
                 background: isDel ? 'var(--red-dim)' : 'var(--surface)',
                 color: isDel ? 'var(--red)' : 'var(--text)',

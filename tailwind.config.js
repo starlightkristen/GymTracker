@@ -24,7 +24,8 @@ export default {
         'red-dim': 'var(--red-dim)',
       },
       fontFamily: {
-        sans: ['"Space Grotesk"', 'system-ui', 'sans-serif'],
+        sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+        mono: ['"IBM Plex Mono"', 'ui-monospace', 'SF Mono', 'Consolas', 'monospace'],
       },
       borderRadius: {
         card: '16px',

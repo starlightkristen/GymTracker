@@ -20,8 +20,8 @@ export default function BJJOverview() {
     <ScreenWrapper>
       <PageHeader back backLabel="Martial Arts" />
       <div className="px-5 text-center -mt-1">
-        <p className="text-[36px] leading-none" style={{ color: 'var(--purple)' }}>🤼</p>
-        <h1 className="mt-3 text-[24px] font-bold" style={{ color: 'var(--text)' }}>Brazilian Jiu-Jitsu</h1>
+        <p className="text-[30px] leading-none" style={{ color: 'var(--purple)' }}>🤼</p>
+        <h1 className="mt-3 text-[22px] font-semibold tracking-tight" style={{ color: 'var(--text)' }}>Brazilian Jiu-Jitsu</h1>
       </div>
 
       <div className="px-5 mt-4">

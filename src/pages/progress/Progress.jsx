@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { TrendingUp } from 'lucide-react'
 import ScreenWrapper from '../../components/layout/ScreenWrapper'
 import PageHeader from '../../components/layout/PageHeader'
 import { getStats } from '../../lib/stubs'
@@ -29,11 +30,11 @@ export default function Progress() {
               className="rounded-card px-4 py-3"
               style={{ background: 'var(--surface)', minHeight: 76 }}
             >
-              <p className="text-[26px] font-bold leading-none" style={{ color: 'var(--cyan)' }}>
+              <p className="text-[22px] font-semibold leading-none font-mono" style={{ color: 'var(--cyan)' }}>
                 {stats ? s.formatter(stats[s.key]) : '—'}
               </p>
-              <p className="mt-2 text-[12px]" style={{ color: 'var(--text)' }}>{s.label}</p>
-              <p className="text-[11px]" style={{ color: 'var(--text-sub)' }}>{s.sub}</p>
+              <p className="mt-3 text-[10px] label-micro" style={{ color: 'var(--text)' }}>{s.label}</p>
+              <p className="text-[11px] mt-0.5" style={{ color: 'var(--text-sub)' }}>{s.sub}</p>
             </div>
           ))}
         </div>
@@ -65,10 +66,11 @@ export default function Progress() {
         </div>
 
         <div
-          className="mt-4 rounded-card h-11 flex items-center px-4 text-[13px]"
+          className="mt-4 rounded-card h-11 flex items-center gap-2.5 px-4 text-[12px] font-medium"
           style={{ background: 'var(--cyan-dim)', color: 'var(--cyan)' }}
         >
-          🏆&nbsp;&nbsp;New PR: Chest Press — 105 lbs this week!
+          <TrendingUp size={14} strokeWidth={2.25} />
+          <span>New PR — Chest Press, 105 lbs this week</span>
         </div>
       </div>
     </ScreenWrapper>

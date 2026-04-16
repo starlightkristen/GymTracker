@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+import { Camera } from 'lucide-react'
 import ScreenWrapper from '../../components/layout/ScreenWrapper'
 import PageHeader from '../../components/layout/PageHeader'
 import ExerciseCard from '../../components/ui/ExerciseCard'
@@ -121,11 +122,11 @@ export default function TodayGym() {
 
           <Link
             to="/today/qr"
-            className="rounded-card flex items-center justify-center h-12 text-[14px] gap-2 mt-1"
+            className="rounded-card flex items-center justify-center h-12 text-[13px] font-medium gap-2.5 mt-1"
             style={{ background: 'var(--cyan-dim)', color: 'var(--cyan)' }}
           >
-            <span>📷</span>
-            <span>Scan Machine QR Code</span>
+            <Camera size={16} strokeWidth={2.25} />
+            <span>Scan machine QR</span>
           </Link>
         </div>
       </div>

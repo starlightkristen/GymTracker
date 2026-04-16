@@ -37,7 +37,7 @@ export default function TechniqueDetail() {
             {t.level}
           </span>
         </div>
-        <h1 className="mt-3 text-[24px] font-bold leading-tight" style={{ color: 'var(--text)' }}>
+        <h1 className="mt-3 text-[22px] font-semibold tracking-tight leading-[1.15]" style={{ color: 'var(--text)' }}>
           {t.title.map((line, i) => <div key={i}>{line}</div>)}
         </h1>
 

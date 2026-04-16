@@ -36,14 +36,14 @@ export default function Welcome() {
     >
       <div className="flex-1 flex flex-col items-center justify-center px-5 text-center">
         <div
-          className="w-[60px] h-[60px] rounded-[14px] flex items-center justify-center"
+          className="w-[56px] h-[56px] rounded-[12px] flex items-center justify-center"
           style={{ background: 'var(--cyan)' }}
         >
-          <span className="text-[28px] font-bold" style={{ color: 'var(--bg)' }}>M</span>
+          <span className="text-[24px] font-semibold tracking-tight" style={{ color: 'var(--bg)' }}>M</span>
         </div>
-        <h1 className="mt-5 text-[30px] font-bold" style={{ color: 'var(--text)' }}>Meridian</h1>
-        <p className="mt-2 text-[15px]" style={{ color: 'var(--text-sub)' }}>
-          Train with Intent.
+        <h1 className="mt-5 text-[24px] font-semibold tracking-tight" style={{ color: 'var(--text)' }}>Meridian</h1>
+        <p className="mt-2 text-[13px] label-micro" style={{ color: 'var(--text-sub)' }}>
+          Train with Intent
         </p>
       </div>
 

@@ -49,10 +49,10 @@ export default function PlateCalculator() {
               −
             </button>
             <div className="text-center">
-              <p className="text-[40px] font-bold leading-none" style={{ color: 'var(--cyan)' }}>
+              <p className="text-[36px] font-semibold leading-none font-mono tracking-tight" style={{ color: 'var(--cyan)' }}>
                 {target}
               </p>
-              <p className="mt-1 text-[13px]" style={{ color: 'var(--text-sub)' }}>lbs</p>
+              <p className="mt-1 text-[11px] label-micro" style={{ color: 'var(--text-sub)' }}>lbs</p>
             </div>
             <button
               type="button"

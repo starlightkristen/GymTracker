@@ -22,9 +22,9 @@ export default function MuayThaiOverview() {
     <ScreenWrapper>
       <PageHeader back backLabel="Martial Arts" />
       <div className="px-5 text-center -mt-1">
-        <p className="text-[36px] leading-none" style={{ color: 'var(--coral)' }}>🥊</p>
-        <h1 className="mt-3 text-[26px] font-bold" style={{ color: 'var(--text)' }}>Muay Thai</h1>
-        <p className="mt-1 text-[13px]" style={{ color: 'var(--text-sub)' }}>The Art of Eight Limbs</p>
+        <p className="text-[30px] leading-none" style={{ color: 'var(--coral)' }}>🥊</p>
+        <h1 className="mt-3 text-[22px] font-semibold tracking-tight" style={{ color: 'var(--text)' }}>Muay Thai</h1>
+        <p className="mt-1 text-[11px] label-micro" style={{ color: 'var(--text-sub)' }}>The Art of Eight Limbs</p>
       </div>
 
       <div className="px-5 mt-4 flex flex-wrap gap-2">

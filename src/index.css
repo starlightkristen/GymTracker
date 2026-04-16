@@ -28,9 +28,24 @@ html, body, #root {
   margin: 0;
   background: var(--bg);
   color: var(--text);
-  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  font-feature-settings: 'cv11', 'ss01', 'ss03';
+  letter-spacing: -0.01em;
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: transparent;
+}
+
+.font-mono, .tabular {
+  font-family: 'IBM Plex Mono', ui-monospace, 'SF Mono', Consolas, monospace;
+  font-feature-settings: 'tnum', 'ss02';
+  letter-spacing: 0;
+}
+
+/* Micro labels: uppercase + tracked for the "instrument panel" feel */
+.label-micro {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 500;
 }
 
 * { box-sizing: border-box; }

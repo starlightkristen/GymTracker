@@ -33,7 +33,7 @@ export default function StretchSession() {
         <p className="mt-2 text-[12px]" style={{ color: 'var(--text-sub)' }}>
           {CURRENT} of {TOTAL} stretches
         </p>
-        <h1 className="mt-3 text-[24px] font-bold" style={{ color: 'var(--text)' }}>Hip Flexor Lunge</h1>
+        <h1 className="mt-3 text-[22px] font-semibold tracking-tight" style={{ color: 'var(--text)' }}>Hip Flexor Lunge</h1>
         <span
           className="inline-flex mt-3 px-2.5 py-1 rounded-pill text-[11px]"
           style={{ background: 'var(--green-dim)', color: 'var(--green)' }}
@@ -57,8 +57,8 @@ export default function StretchSession() {
           className="mt-4 rounded-card py-5 text-center"
           style={{ background: 'var(--green-dim)', color: 'var(--green)' }}
         >
-          <p className="text-[36px] font-bold leading-none">{fmt(seconds)}</p>
-          <p className="mt-3 text-[13px]">Hold — breathe deeply</p>
+          <p className="text-[32px] font-semibold leading-none font-mono tracking-tight">{fmt(seconds)}</p>
+          <p className="mt-3 text-[11px] label-micro">Hold — breathe deeply</p>
         </div>
 
         <div

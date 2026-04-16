@@ -45,10 +45,10 @@ export default function RestTimer({ seconds = 90, onComplete, onStart }) {
       style={{ background: 'var(--surface-hi)', minHeight: 60 }}
     >
       <div className="flex items-baseline gap-3">
-        <span className="text-[12px]" style={{ color: 'var(--text-sub)' }}>
-          Rest Timer
+        <span className="text-[10px] label-micro" style={{ color: 'var(--text-sub)' }}>
+          Rest
         </span>
-        <span className="text-[26px] font-bold leading-none" style={{ color: 'var(--cyan)' }}>
+        <span className="text-[24px] font-semibold leading-none font-mono" style={{ color: 'var(--cyan)' }}>
           {fmt(remaining)}
         </span>
       </div>

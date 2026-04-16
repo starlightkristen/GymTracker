@@ -35,7 +35,7 @@ export default function ScenarioDetail() {
             ⚡ High Threat
           </span>
         </div>
-        <h1 className="mt-3 text-[24px] font-bold leading-tight" style={{ color: 'var(--text)' }}>
+        <h1 className="mt-3 text-[22px] font-semibold tracking-tight leading-[1.15]" style={{ color: 'var(--text)' }}>
           Front Choke<br />Defense
         </h1>
 

@@ -40,19 +40,19 @@ export default function ExerciseCard({
       />
       <div className="flex items-start justify-between pl-4 pr-4 py-3 gap-3">
         <div className="flex flex-col items-start gap-1.5 min-w-0">
-          <p className="font-bold text-[15px] text-text truncate" style={{ color: 'var(--text)' }}>
+          <p className="font-semibold text-[14px] tracking-tight truncate" style={{ color: 'var(--text)' }}>
             {name}
           </p>
           <Pill label={muscle} bg={pillBg} color={accentColor} />
-          <p className="text-[12px]" style={{ color: 'var(--text-sub)' }}>
+          <p className="text-[11px] font-mono" style={{ color: 'var(--text-sub)' }}>
             {sets}×{reps}
           </p>
         </div>
         <div className="flex flex-col items-start gap-1.5 shrink-0 w-[155px]">
-          <p className="text-[12px]" style={{ color: 'var(--text-sub)' }}>
-            Last: {last_weight} lbs
+          <p className="text-[11px]" style={{ color: 'var(--text-sub)' }}>
+            Last <span className="font-mono">{last_weight}</span> lbs
           </p>
-          <p className="text-[13px] font-bold" style={{ color: accentColor }}>
+          <p className="text-[13px] font-semibold font-mono" style={{ color: accentColor }}>
             {recLabel}
           </p>
           {rec_note && (

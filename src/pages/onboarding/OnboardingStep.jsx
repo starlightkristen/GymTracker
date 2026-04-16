@@ -13,11 +13,11 @@ export default function OnboardingStep({ step, total, title, subtitle, children,
             style={{ background: 'var(--cyan)', width: `${pct}%` }}
           />
         </div>
-        <h1 className="mt-4 text-[26px] font-bold leading-tight" style={{ color: 'var(--text)' }}>
+        <h1 className="mt-4 text-[22px] font-semibold tracking-tight leading-[1.15]" style={{ color: 'var(--text)' }}>
           {title}
         </h1>
         {subtitle && (
-          <p className="mt-1 text-[13px]" style={{ color: 'var(--text-sub)' }}>{subtitle}</p>
+          <p className="mt-2 text-[12px]" style={{ color: 'var(--text-sub)' }}>{subtitle}</p>
         )}
       </div>
 

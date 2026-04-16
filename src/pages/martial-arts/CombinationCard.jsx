@@ -18,7 +18,7 @@ export default function CombinationCard() {
         >
           🥊 Combination
         </span>
-        <h1 className="mt-3 text-[22px] font-bold" style={{ color: 'var(--text)' }}>1-2-Low Kick</h1>
+        <h1 className="mt-3 text-[22px] font-semibold tracking-tight" style={{ color: 'var(--text)' }}>1-2-Low Kick</h1>
         <p className="mt-1 text-[13px]" style={{ color: 'var(--text-sub)' }}>
           Core Muay Thai combination · Beginner
         </p>

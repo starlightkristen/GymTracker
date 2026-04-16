@@ -74,11 +74,11 @@ export default function ExerciseLog() {
             className="mt-3 rounded-card px-4 py-3"
             style={{ background: 'var(--cyan-dim)' }}
           >
-            <p className="text-[11px] font-medium" style={{ color: 'var(--cyan)' }}>
+            <p className="text-[10px] label-micro" style={{ color: 'var(--cyan)' }}>
               Recommended today
             </p>
-            <p className="mt-1.5 text-[13px] font-bold" style={{ color: 'var(--text)' }}>
-              {rec.weight} lbs — {rec.note}
+            <p className="mt-1.5 text-[13px] font-semibold" style={{ color: 'var(--text)' }}>
+              <span className="font-mono">{rec.weight}</span> lbs — {rec.note}
             </p>
           </div>
         )}
@@ -111,7 +111,7 @@ export default function ExerciseLog() {
                 >
                   <span className="text-[10px]" style={{ color: 'var(--text-sub)' }}>lbs</span>
                   <span
-                    className="text-[17px] font-bold"
+                    className="text-[16px] font-semibold font-mono"
                     style={{ color: active ? 'var(--cyan)' : 'var(--muted)' }}
                   >
                     {s.weight ?? '—'}
@@ -125,7 +125,7 @@ export default function ExerciseLog() {
                 >
                   <span className="text-[10px]" style={{ color: 'var(--text-sub)' }}>reps</span>
                   <span
-                    className="text-[17px] font-bold"
+                    className="text-[16px] font-semibold font-mono"
                     style={{ color: active ? 'var(--cyan)' : 'var(--muted)' }}
                   >
                     {s.reps ?? '—'}
